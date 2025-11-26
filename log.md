@@ -1,1 +1,3 @@
-- 26/11/2025 (0.013, [v1.cpp](v1.cpp)): Duyệt toàn bộ xâu trong tập test. So sánh LCS của nó với tập train, và chọn ra xâu trong tập train có LCS lớn nhất. Nếu có nhiều xâu như vậy, chọn xâu ngắn nhất.
+- 26/11/2025 (0.013, [v1.cpp](v1.cpp)): 
+    - Lọc tập train thành các file input có dạng `{id xâu, mã loài, xâu}`, tập test: `{id xâu, mã loài, xâu}`, tập đáp án: `{id xâu, đáp án}`
+    - Duyệt toàn bộ xâu trong tập test. So sánh LCS của nó với tập train, và chọn ra xâu trong tập train có LCS lớn nhất. Nếu có nhiều xâu như vậy, chọn xâu ngắn nhất.
