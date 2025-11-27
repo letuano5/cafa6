@@ -1,3 +1,8 @@
-- 26/11/2025 (0.013, [v1.cpp](v1.cpp)): 
+- 26/11/2025 (0.013, [2611-v1.cpp](2611-lcs/v1.cpp)): 
     - Lọc tập train thành các file input có dạng `{id xâu, mã loài, xâu}`, tập test: `{id xâu, mã loài, xâu}`, tập đáp án: `{id xâu, đáp án}`
     - Duyệt toàn bộ xâu trong tập test. So sánh LCS của nó với tập train, và chọn ra xâu trong tập train có LCS lớn nhất. Nếu có nhiều xâu như vậy, chọn xâu ngắn nhất.
+- 27/11/2025 (0.023, [cafa6-logistic.ipynb](2711-lr/cafa6-logistic.ipynb))
+    - Lọc ra các xâu con độ dài 2 và xuất hiện ít nhất 1 lần trong các xâu train để làm feature.
+    - Sử dụng mô hình Logistic Regression với cách train OneVsRest để train trên toàn bộ tập dữ liệu
+        - Mô hình Logistic Regression sẽ trả ra xác suất để biến `y` có giá trị là 0 hoặc 1.
+        - OneVsRest sẽ tạo `n_output` mô hình, mỗi mô hình sẽ dự đoán xem vector kết quả có thể xuất hiện biến `y` hay không.
