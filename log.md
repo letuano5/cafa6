@@ -12,3 +12,5 @@
         - Duy trì một tập `S` thể hiện các xâu chưa bị phủ.
         - Duyệt các xâu con theo thứ tự đã sắp xếp. Với mỗi xâu con, ta kiểm tra xem nó phủ được bao nhiêu xâu trong tập `S`. Nếu như số lượng xâu phủ $>=1$, ta xoá các xâu bị phủ ra khỏi tập `S` và thêm xâu con vào tập feature đáp án.
         - Dừng thuật toán khi độ phủ $>=95%$.
+- 27/11/2025 (0.129, [cafa6-logistic-v3](https://www.kaggle.com/code/letuano5/cafa6-logisticregression/edit))
+    - Sử dụng thuật toán tham lam nêu trên để tìm feature, với xâu con độ dài 2 và độ phủ $100%$.
