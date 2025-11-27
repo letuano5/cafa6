@@ -6,3 +6,9 @@
     - Sử dụng mô hình Logistic Regression với cách train OneVsRest để train trên toàn bộ tập dữ liệu
         - Mô hình Logistic Regression sẽ trả ra xác suất để biến `y` có giá trị là 0 hoặc 1.
         - OneVsRest sẽ tạo `n_output` mô hình, mỗi mô hình sẽ dự đoán xem vector kết quả có thể xuất hiện biến `y` hay không.
+- 27/11/2025 (0.103, [cafa6-logistic-v2.ipynb](2711-lr/cafa6-logistic-v2.ipynb))
+    - Sử dụng tham lam để tìm feature độ dài 2 và 3:
+        - Sắp xếp các xâu con độ dài `i` theo thứ tự tăng dần về số lượng xuất hiện trong tập train.
+        - Duy trì một tập `S` thể hiện các xâu chưa bị phủ.
+        - Duyệt các xâu con theo thứ tự đã sắp xếp. Với mỗi xâu con, ta kiểm tra xem nó phủ được bao nhiêu xâu trong tập `S`. Nếu như số lượng xâu phủ $>=1$, ta xoá các xâu bị phủ ra khỏi tập `S` và thêm xâu con vào tập feature đáp án.
+        - Dừng thuật toán khi độ phủ $>=95%$.
